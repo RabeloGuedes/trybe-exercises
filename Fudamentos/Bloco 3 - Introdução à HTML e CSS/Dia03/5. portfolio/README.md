@@ -2,8 +2,10 @@
 
 ### Requisitos
 
->###### Seu Portfólio Web deve ser estilizado usando as informações a seguir:
->- Defina fontes diferentes para o seu nome e para a descrição que você criou;
->- Defina uma cor base de background do seu Portfólio Web ;
->- Altere o estilo das tags que você usou para destacar algumas informações, como sua nacionalidade e a cidade/estado onde mora;
->- Coloque tamanhos diferentes para os elementos da lista de habilidades que você criou. Lembre-se de usar classes para cada um dos elementos;
+>###### SSeu Portfólio Web deve ter um layout usando Box Model com as informações a seguir:
+>- Coloque seu nome, sua foto e a descrição que você escreveu sobre você dentro de blocos;
+>- A descrição deve ficar ao lado da foto;
+>- Centralize seu nome na página;
+>- Use padding e coloque uma cor de fundo na sua foto que seja diferente da cor de fundo do resto da página;
+>- Adicione margin e padding nos elementos que julgar necessário;
+>- Coloque estilo somente nos itens ímpares da lista das suas habilidades.
