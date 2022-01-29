@@ -1,91 +1,126 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
+/* General Settings - Begin */
 
 body {
     background-color: #32322C;
     color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+#page-top, #middle, #bottom {
+    padding: 0 3%;
+}
+
+/* General Settings - End */
+
+
+
+/* Header Settings - Begin */
+
+header {
+    background-color: #f3f3f3;
+    padding: 10px; 
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+
+#index li {
+    display: inline-block;
+    width: 30%;
     text-align: center;
 }
 
-#foto-de-perfil {
-    width: 250px;
-    border-radius: 40px;
-    margin-top: 30px;
-    display: inline-block;
-}
-
-a {
+#index li a {
     text-decoration: none;
+    color: #1f1f1b;
+    font-family: 'Comforter';
+    font-size: 35px;
+    letter-spacing: 5px;
+    transition: color 1s;
+    transition: background-color 1s;
+    display: block;
 }
 
-#topo {
-    font-family: sans-serif;
-    margin-top: 30px;
+#index li a:hover {
+    color:#f3f3f3;
+    background-color: #1f1f1b;
 }
 
-ul {
-    font-family: Roboto, sans-serif;
-} 
+/* Header Settings - End */
 
-ul, ol {
-    font-size: 2em;
-    margin: 30px 0 25px 0;
+
+
+/* Page's top's Settings - Begin */
+
+
+#page-top h1 {
+    font-family: 'Roboto Mono';
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 135px;
 }
 
-ol > li {
-    line-height: 40px;
+#image-container {
+    height: 300px;
+    position: relative;
 }
 
-ul > li > h4 {
-    color: rgb(0, 128, 117);
-    line-height: 40px;
-} 
-
-h2 {
-    font-size: 3em;
-    margin-top: 20px;
+#profile-image {
+    float: left;
+    height: 280px;
+    padding: 10px;
+    border-radius: 50px;
 }
 
-
-#ability1 {
-    font-size: .8em;
-    color:rgb(28, 236, 63)
+#description {
+    font-family: 'Supermercado One';
+    font-size: 27px;
+    font-style: italic;
+    color: #f8f694;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 33%;
 }
 
-#ability2 {
-    font-size: .7em;
+/* Page's top's Settings - End */
+
+
+
+/* Page's middle's Settings - Begin */
+
+#middle h2 {
+    text-align: center;
+    font-size: 100px
+}
+
+#abilitys {
+    list-style: none;
+    font-size: 27px;
+    line-height: 45px;
+    margin-top: -35px;
+}
+
+#abilitys li:nth-of-type(odd) {
+    background-color: rgb(124, 23, 207);
+}
+
+#abilitys li:nth-of-type(1) {
+    font-size: 35px;
     letter-spacing: 3px;
-    color:rgb(148, 103, 199)
 }
 
-#ability3 {
-    font-size: .9em;
-    letter-spacing: 4px;
-    color: rgb(83, 167, 206);
+#abilitys li:nth-of-type(2) {
+    font-size: 35px;
+    letter-spacing: 8px;
 }
 
-#fim {
-    font-size: 1.3em;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#abilitys li:nth-of-type(3) {
+    font-size: 33px;
+    letter-spacing: 5px;
 }
-
-#fim > a {
-    color:#f7ffab;
-}
-
-#index {
-    text-align: left;
-    margin-left: 40px;
-    margin-top: 5px;
-}
-
-ol > li > a {
-    font-size: .8em;
-    color:rgb(126, 243, 145);
-    line-height: 3px;
-}
+/* Page's middle's Settings - End */
