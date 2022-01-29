@@ -59,6 +59,7 @@ header {
 
 #page-top h1 {
     font-family: 'Roboto Mono';
+    font-size: 80px;
     letter-spacing: 5px;
     text-align: center;
     margin-top: 135px;
@@ -95,14 +96,23 @@ header {
 
 #middle h2 {
     text-align: center;
-    font-size: 100px
+    font-size: 85px;
+    font-family: 'Roboto Mono';
+    margin: 40px 0 0 0;
+}
+
+#abilitys-container {
+    display: inline-block;
+    width: 100%;
 }
 
 #abilitys {
     list-style: none;
     font-size: 27px;
+    font-family: 'Supermercado One';
     line-height: 45px;
-    margin-top: -35px;
+    text-align: center;
+    margin-left: -35px;
 }
 
 #abilitys li:nth-of-type(odd) {
@@ -124,3 +134,39 @@ header {
     letter-spacing: 5px;
 }
 /* Page's middle's Settings - End */
+
+
+/* Page's bottom's Settings - Begin */
+
+#bottom {
+    text-align: center;
+}
+
+#bottom h2 {
+    font-size: 55px;
+    font-family: 'Roboto Mono';
+    letter-spacing: 5px;
+}
+
+#web-pages {
+    margin-bottom: 20px;
+}
+
+#web-pages a {
+    color:#f3f3f3;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Supermercado One';
+    letter-spacing: 5px;
+    display: block;
+    line-height: 50px;
+    transition: color 1s;
+    transition: background-color 0.5s;
+}
+
+#web-pages a:hover {
+    background-color: #1f1f1b;
+    color: #c2b2b2;
+}
+
+/* Page's bottom's Settings - End */
