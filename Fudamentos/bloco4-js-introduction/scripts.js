@@ -15,10 +15,39 @@
 // };
 // const patientEmail = 'ana@email.com';
 
-const base = 5;
-const height = 8;
+// const base = 5;
+// const height = 8;
 
-const area = base * height;
-const perimeter = 2*base + 2*height;
+// const area = base * height;
+// const perimeter = 2*base + 2*height;
 
-console.log(area, perimeter);
+// console.log(area, perimeter);
+
+// const nota = 87;
+
+// if (nota >= 80) {
+//   console.log('Parabéns, você foi aprovado(a)!');
+// }
+
+// else if (80 > nota && nota >=60) {
+//   console.log('Você está na nossa lista de espera.');
+// }
+// else {
+//   console.log('Você foi reprovado(a).');
+// }
+
+// let estado = 'batata';
+
+// switch (estado) {
+//   case 'aprovada':
+//     console.log('aprovada');
+//   break
+//   case 'lista':
+//     console.log('lista');
+//   break
+//   case 'reprovada':
+//     console.log('reprovada');
+//   break
+//   default:
+//     console.log('none');
+// }
