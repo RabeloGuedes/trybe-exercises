@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="text">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="text">Segundo parágrafo!</p>
+    </header>
+    <script>
+      let pageTitle = document.getElementById("page-title");
+      let subtitle = document.getElementById("subtitle");
+      const paragraph = document.getElementById("paragraph");
+      const secondParagraph = document.getElementById("second-paragraph");
+      const text  = document.getElementsByClassName("text");
+      paragraph.style.color = "red";
+      paragraph.style.background = "black";
+      pageTitle.innerText = "Planeta dos macacos";
+      subtitle.innerText = "Sou um subtítulo";
+      subtitle.style.background = "yellow";
+      secondParagraph.style.color = "blue";
+      secondParagraph.style.fontSize = "27px";
+      secondParagraph.style.fontFamily = "sans-serif";
+      text[0].style.textAlign = "center";
+      text[1].style.textAlign = "center";
+      document.getElementsByTagName("h4")[0].style.color = "purple";
+    </script>
+  </body>
+</html>
