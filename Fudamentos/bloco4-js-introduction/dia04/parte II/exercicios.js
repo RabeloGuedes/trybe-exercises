@@ -100,11 +100,12 @@ function verificaFimPalavra(word, string) {
   let reverseWord = word.split('').reverse().join('');
   let compareWord = '';
   for (let index = 0; index < string.length; index += 1) {
-    compareWord += word[index];
+    compareWord += reverseWord[index];
   }
   if (compareWord === reverseString) {
     return true;
   }
-  return reverseWord;
+  return false;
 }
 console.log(verificaFimPalavra('trybe', 'be'));
+console.log(verificaFimPalavra('joaofernando', 'fernan'));
