@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parte I</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+// 1. Acesse o elemento elementoOndeVoceEsta .
+// 2. Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+// 3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+// 4. Acesse o primeiroFilho a partir de pai .
+// 5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+// 6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+// 7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+// 8. Agora acesse o terceiroFilho a partir de pai .
+  let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+
+  let pai = elementoOndeVoceEsta.parentElement;
+  pai.style.backgroundColor = "#2bbff0";
+
+  let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+  primeiroFilhoDoFilho.innerText = 'Água mole é pedra dura é, tanto bate até que fura. ';
+
+  pai.firstElementChild;
+
+  elementoOndeVoceEsta.previousElementSibling;
+
+  elementoOndeVoceEsta.nextSibling;
+
+  elementoOndeVoceEsta.nextElementSibling;
+
+  pai.lastElementChild.previousElementSibling;
+
+//9. Crie um irmão para elementoOndeVoceEsta .
+//10. Crie um filho para elementoOndeVoceEsta .
+//11. Crie um filho para primeiroFilhoDoFilho .
+//12. A partir desse filho criado, acesse terceiroFilho 
+
+  let segundoFilho = document.createElement('section');
+  segundoFilho.className = 'segundoFilho';
+  pai.appendChild(segundoFilho);
+  
+  let maisUmFilho = document.createElement('section');
+  maisUmFilho.className = 'maisUmFilho';
+  elementoOndeVoceEsta.append(maisUmFilho);
+
+  let filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+  filhoDoPrimeiroFilhoDoFilho.className = 'filhoDoPrimeiroFilhoDoFilho';
+  primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+  let terceiroFilho = filhoDoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
+
+  //13. Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho.
+  
+  let primeiro = document.getElementById('primeiroFilho');
+  let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+  let quartoEUltimoFilho = document.getElementById('quartoEUltimoFilho');
+  primeiroFilho.remove();
+  filhoDoPrimeiroFilhoDoFilho.remove();
+  segundoEUltimoFilhoDoFilho.remove();
+  maisUmFilho.remove();
+  terceiroFilho.remove();
+  quartoEUltimoFilho.remove();
+  segundoFilho.remove();
+  </script>
+</body>
+</html>
