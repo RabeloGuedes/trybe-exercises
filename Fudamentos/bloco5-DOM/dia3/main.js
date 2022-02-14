@@ -11,7 +11,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // Por causa da classe "tech", a qual modifica o posicionamento no eixo Y.
 
-firstLi.style.transform = 'translateY(0px)';
+// firstLi.style.transform = 'translateY(0px)';
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
@@ -64,16 +64,16 @@ myWebpage.addEventListener('dblclick', redirecionar);
 // a cor do mesmo;
 
 // Segue abaixo um exemplo do uso de event.target:
-
+myWebpage.style.color = 'white';
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
-  event.target.innerText = 'Opção reiniciada';
+  alert(event.target.style['color']);
   // O event possui várias propriedades, porém a mais usada é o event.target,
   // que retorna o objeto que disparou o evento.
 }
 
-firstLi.addEventListener('dblclick', resetText);
+myWebpage.addEventListener('mouseover', resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
