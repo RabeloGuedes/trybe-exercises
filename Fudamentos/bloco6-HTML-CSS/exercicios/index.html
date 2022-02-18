@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Forumlário de viagem</title>
+</head>
+<body>
+
+  <form action="" method="get">
+
+    <fieldset id="name-fieldset">
+      <label for="name-input">Nome:</label>
+      <input type="text" id="name-input" minlength='10' maxlength="40" required>
+    </fieldset>
+
+    <fieldset id="email-fieldset">
+      <label for="email-input">Email:</label>
+      <input type="email" id="email-input" minlength='10' maxlength="50" required>
+    </fieldset>
+
+    <fieldset id="locations-fieldset">
+      <label for="city"><input type="radio" name="location" id="city" required>Cidade</label>
+      <label for="field"><input type="radio" name="location"  id="field" required>Campo</label>
+      <label for="beach"><input type="radio" name="location"  id="beach" required>Praia</label>
+      <label for="moutains"><input type="radio" name="location"  id="moutains" required>Montanhas</label>
+    </fieldset>
+
+    <fieldset id="text-fieldset">
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+      <textarea name="" id="text-area" cols="50" rows="10" maxlength="500"></textarea>
+
+      <p>Qual a melhor data para realizar sua viagem?</p>
+      <input type="date" id="date-time">
+
+      <p id="notifications-paragraph">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+      <input type="checkbox">
+
+      <p id="agree-statment">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+      <input type="checkbox">
+
+    </fieldset>
+
+    <button type="submit" id="send-btn" class="btn">Enivar</button>
+    <input type="reset" value='Limpar formulário' id="clear-btn" class="btn"></input>
+  </form>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
