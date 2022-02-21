@@ -15,7 +15,7 @@
     <h1 class="display-1 text-center">Viagem Trybe</h1>
   </header>
 
-  <form class="container" action="" method="get">
+  <form class="container" id="form" action="" method="get">
 
     <div class="form-floating mb-3 " id="name-div">
       <input class="form-control" type="text" id="name-input" minlength='10' maxlength="40" required>
@@ -71,9 +71,14 @@
 
 
   <script src="script.js"></script>
-  <script src="pikaday.js"></script>
-<script>
+  <!-- <script src="pikaday.js"></script> -->
+<!-- <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker') });
-</script>
+  </script> -->
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+  <script>
+    const validate = new window.JustValidate('#form');
+  </script>
 </body>
 </html>
