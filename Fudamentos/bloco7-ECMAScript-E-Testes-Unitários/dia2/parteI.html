@@ -19,7 +19,7 @@
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
       const result = parseInt(value1) + parseInt(value2);
-      if ((typeof parseInt(value1) === 'number' && value2 === '') || (value1 === '' && typeof parseInt(value2) === 'number')) {
+      if ((typeof parseInt(value1) === 'number' && value2 === '') || (value1 === '' && typeof parseInt(value2) === 'number') || (typeof value1 !== 'number' && typeof value2 !== 'number')) {
           throw new Error('Ambos precisam ser númericos.');
         }
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
