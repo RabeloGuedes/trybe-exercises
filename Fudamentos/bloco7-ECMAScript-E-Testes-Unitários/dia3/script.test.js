@@ -1,4 +1,4 @@
-const sum = require('./script.js');
+const sum = require('./script.js')
 
 describe('Requisito 1', () => {
   test('Sums two numbers.', () => {
