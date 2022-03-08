@@ -1,4 +1,5 @@
-const sum = require('./script.js')
+// Teste do 1° requisito
+const {sum} = require('../script.js');
 
 describe('Requisito 1', () => {
   test('Sums two numbers.', () => {
@@ -8,3 +9,4 @@ describe('Requisito 1', () => {
     expect(() => sum(4, '5')).toThrowError('parameters must be numbers');
   })
 });
+// Teste do 1° requisito
