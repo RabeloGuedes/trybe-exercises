@@ -1,3 +1,5 @@
+// Requisito 1
+
 function sum(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('parameters must be numbers');
@@ -8,6 +10,9 @@ function sum(a, b) {
 
 module.exports = sum;
 
+// Requisito 1
+
+// Requisito 2
 
 function myRemove(arr, item) {
   let newArr = [];
@@ -30,6 +35,10 @@ describe('Requisito 2', () => {
     expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   });
 });
+
+// Requisito 2
+
+// Requisito 3
 
 function myFizzBuzz(num) {
   if (typeof num !== 'number') return false;
@@ -56,3 +65,98 @@ describe('Requisito 3', () => {
     expect(myFizzBuzz('a')).toBe(false);
   });
 });
+
+// Requisito 3
+
+// Requisito 4
+
+const checkVowels = (letter) => {
+  let result;
+  if (letter === 'a') {
+    result = 1;
+  } else if (letter === 'e') {
+    result = 2;
+  } else if (letter === 'i') {
+    result = 3;
+  } else if (letter === 'o') {
+    result = 4;
+  } else if (letter === 'u') {
+    result = 5;
+  }
+  return result;
+}
+
+const checkNumbers = (number) => {
+  let result;
+  if (number === '1') {
+    result = 'a';
+  } else if (number === '2') {
+    result = 'e';
+  } else if (number === '3') {
+    result = 'i';
+  } else if (number === '4') {
+    result = 'o';
+  } else if (number === '5') {
+    result = 'u';
+  }
+  return result;
+}
+
+const encode = (code) => {
+  let secret = '';
+  let letra = '';
+  for (let index = 0; index < code.length; index += 1) {
+    letra = code[index];
+    secret += checkVowels(letra);
+  }
+  return secret;
+}
+
+const decode = (code) => {
+  let secret = '';
+  let number = '';
+  for (let index = 0; index < code.length; index += 1) {
+    number = code[index];
+    secret += checkNumbers(number);
+  }
+  return secret;
+}
+
+describe('Requisito 4.1 Encode', () => {
+  test('Converter "a" em 1', () => {
+    expect(encode('a')).toBe('1');
+  });
+  test('Converter "e" em 2', () => {
+    expect(encode('e')).toBe('2');
+  });
+  test('Converter "i" em 3', () => {
+    expect(encode('i')).toBe('3');
+  });
+  test('Converter "o" em 4', () => {
+    expect(encode('o')).toBe('4');
+  });
+  test('Converter "u" em 5', () => {
+    expect(encode('u')).toBe('5');
+  });
+});
+
+describe('Requisito 4.2 Decode', () => {
+  test('Converter 1 em "a"', () => {
+    expect(decode('1')).toBe('a');
+  });
+  test('Converter 2 em "e"', () => {
+    expect(decode('2')).toBe('e');
+  });
+  test('Converter 3 em "i', () => {
+    expect(decode('3')).toBe('i');
+  });
+  test('Converter 4 em "o', () => {
+    expect(decode('4')).toBe('o');
+  });
+  test('Converter 5 em "u', () => {
+    expect(decode('5')).toBe('u');
+  });
+});
+
+
+// Requisito 4
