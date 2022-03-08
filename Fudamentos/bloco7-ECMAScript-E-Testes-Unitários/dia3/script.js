@@ -160,3 +160,55 @@ describe('Requisito 4.2 Decode', () => {
 
 
 // Requisito 4
+
+// Requisito 5
+
+const techList = (array, name) => { 
+  let finalArray = [];
+  let nome = name;
+  let ordernado = array.sort(); 
+  if (array.length !== 0) { 
+    for (let index = 0; index < ordernado.length; index += 1) { 
+      finalArray.push({ tech: ordernado[index], name: nome }); 
+    }
+    return finalArray;
+  } return 'Vazio!'; 
+}
+
+describe('Requisito 5', () => {
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas'
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas'
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas'
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas'
+      },
+      {
+        tech: 'React',
+        name: 'Lucas'
+      }
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
+});
+
+// Requisito 5
