@@ -9,7 +9,7 @@ const arrays = [
 
 const flatten = (array) => {
   let result;
-  list = array.reduce((acc, curr) => `${acc}, ${curr}`,);
+  const list = array.reduce((acc, curr) => `${acc}, ${curr}`,);
   result = `[${list}]`;
   return result;
 }
