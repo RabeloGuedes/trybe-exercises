@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +15,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Task value = 'Olá' />
         <a
           className="App-link"
           href="https://reactjs.org"
